@@ -20,10 +20,10 @@ export class FavoriteRecipeList extends Component {
   }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return {
-        favoriteRecipes: state.favoriteRecipes
+      favoriteRecipes: state.favoriteRecipes
     }
 }
 
-export default connect(mapStateToProps, null )(FavoriteRecipeList);
+export default connect(mapStateToProps, null)(FavoriteRecipeList)
