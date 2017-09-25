@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux' ;
-import { SET_RECIPES, FAVORITE_RECIPE } from '../actions/index' ;
+import { SET_RECIPES, FAVORITE_RECIPE } from '../actions' ;
 
 
 function recipes( state=[] , action ){

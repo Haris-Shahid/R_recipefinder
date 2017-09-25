@@ -5,17 +5,24 @@ import RecipeItems from './RecipeItem' ;
 export class FavoriteRecipeList extends Component {
   render() {
       console.log('favorite recipe',this.props.favoriteRecipe)
-      return this.props.favoriteRecipe.map( (recipe ,index) => {
-              return(
-                  <RecipeItems key={index} recipe={recipe} />
-                )
-            })
+      return (
+          <div>
+              <h4>Favorite Recipes: </h4>
+              {
+                this.props.favoriteRecipes.map( (recipe ,index) => {
+                  return(
+                    <RecipeItems key={index} recipe={recipe} />
+                    )
+                })
+              }
+          </div>
+      )
   }
 }
 
 function mapStateToProps(state){
     return {
-        favoriteRecipe: state.favoriteRecipes
+        favoriteRecipes: state.favoriteRecipes
     }
 }
 

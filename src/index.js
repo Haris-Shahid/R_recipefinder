@@ -8,7 +8,6 @@ import rootReducers from './reducers' ;
 
 const store = createStore(rootReducers) ;
 
-// store.subscribe(() => console.log("store",store.getState())) ;
 store.subscribe(() => console.log("store",store.getState())) ;
 
 ReactDOM.render(
