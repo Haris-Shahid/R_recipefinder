@@ -3,7 +3,6 @@ import '../styles/index.css' ;
 
 import Searchrecipe from './searchrecipe' ;
 import RecipeList from './RecipeList' ;
-import {FavoriteRecipeList} from './favoriterecipelist' ;
 
 class App extends Component{
     render() {
@@ -12,7 +11,6 @@ class App extends Component{
                 <h2>Recipe Finder</h2>
                 <Searchrecipe />
                 <RecipeList />
-                <FavoriteRecipeList />
             </div>
         )
     }
